@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Units</title>
+    <link rel="stylesheet" href="./css/3.styles.css">
+</head>
+<body>
+    <!-- Absolute Unit -->
+    <h2>1. Absolute Unit</h2>
+    <p>
+            Đặc tính của nhóm Absolute unit: <br>
+            <b><i>Kích thước sẽ cố định, không bị thay đổi</i></b><br>
+            dù cho các yếu tố xung quanh tác động. <br>
+            Ví dụ trình duyệt thay đổi kích thước.
+        </p>
+    <!-- px -->
+    <ul id="absolute">
+        <li>
+            <b>px ✅ </b>
+        </li>
+        <p>
+            px: 1px thông thường chiếm 1 điểm ảnh (đối với độ phân giải thập). <br>
+            Đối với độ phân giải cao 1px chiếm nhiều điểm ảnh hơn.
+        </p>
+        <p>
+            <b>Ví Dụ: box width 100px và height 100px</b>
+        </p>
+        <div class="box1"></div>
+        
+        <li>pt</li>
+        <li>cm</li>
+        <li>mm</li>
+        <li>inch</li>
+        <li>pc</li>
+        <br>
+    </ul>
+
+    <!-- Realative Units -->
+    <h2>2. Realative Units</h2>
+    <p>
+            Đặc tính của nhóm Realative unit: <br>
+            Kích thước <b>không cố định</b>. <br>
+            Kích thước sẽ cần một nơi để phụ thuộc vào.<br>
+    </p>
+
+    <!-- % -->
+    <ul id="percent">
+        <li>
+            <b>% ✅</b>
+        </li>
+        <p>
+            Kích thước được tính theo %, <br>
+            <i><b>dựa vào thẻ chứa nó</b></i>
+        </p>
+        <p>
+            <b>Ví Dụ: box2 width 50% và height 100px</b>
+        </p>
+        <div class="box2"></div>
+        <p>
+            Trong trường hợp này, box2 đang nằm trong thẻ <u>ul</u>, <br>
+            vì vậy nó sẽ bằng 50% kích thước thẻ ul. <br>
+            Giả dụ thẻ ul có width : 100 px -> box2 có width : 50px. 
+        </p>
+        <br>
+    </ul>
+    
+    <!-- rem -->
+    <ul>  
+        <li><b>rem ✅</b> </li>
+    </ul>
+
+        <!-- em -->
+        <ul>
+            <li><b>em ✅ </b></li>
+        </ul>
+        <ul>
+            <li>vw</li>
+            <li>vh</li>
+            <li>vmin</li>
+            <li>vmax</li>
+            <li>ex</li>
+            <li>ch</li>
+        </ul>
+</body>
