@@ -14,7 +14,7 @@
             Đặc tính của nhóm Absolute unit: <br>
             <b><i>Kích thước sẽ cố định, không bị thay đổi</i></b><br>
             dù cho các yếu tố xung quanh tác động. <br>
-            Ví dụ trình duyệt thay đổi kích thước.
+            Ví dụ dù trình duyệt thay đổi kích thước <br> thì kích thước của phần tử sử dụng px vẫn không đổi.
         </p>
     <!-- px -->
     <ul id="absolute">
@@ -103,7 +103,7 @@
             <i>
                 ⚠️ Trong trường hợp thẻ gần nhất không chứa fontsize nó sẽ dịch chuyển <br>
                 đến cấp thẻ trước đó chứa nó. <br>
-                ⚠️ em nhân theo cấp → nếu con lại đặt theo em thì nó cộng dồn. <br>
+                ⚠️ em nhân theo cấp → nếu phần tử con lại đặt theo "em" thì nó cộng dồn. <br>
                 <div id="code">
                     .parent {<br>
                         <p id="text-indent">font-size: 16px;</p>
@@ -111,13 +111,13 @@
                     <br>
                     .child {
                         <p id="text-indent">
-                            font-size: 2em; /* 32px */
+                            font-size: 2em; /* 16px *2 = 32px */
                         </p> 
                     }
                     <br>
                     .grandchild {
                         <p id="text-indent">
-                             font-size: 1.5em; /* 1.5 × 32px = 48px */
+                             font-size: 1.5em; /*32px * 1.5 = 48px */
                         </p>
                     }
 
