@@ -1,3 +1,6 @@
+:root{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
 .box1{
     background-color: red;
     width: 100px;
@@ -10,7 +13,34 @@
     height: 100px;
 }
 
-ul#percent, ul#absolute{
+.box3{
+    background-color: rgb(0, 205, 24);
+    width: 50%;
+    height: 100px;
+    width: 10rem;
+}
+.box4{
+    background-color: rgb(238, 0, 255);
+    width: 50%;
+    height: 100px;
+    width: 10em;
+}
+
+ul#absolute{
+    width: 100%;
+    background-color: rgb(146, 178, 255);
+}
+
+ul#percent, ul#rem, ul#em{
     width: 100%;
     background-color: rgb(243, 217, 252);
+}
+
+p#text-indent{
+    text-indent: 20px;
+}
+
+div#code{
+    padding: 5px 10px;
+    border: 1px solid black;
 }

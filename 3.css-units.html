@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./css/3.styles.css">
 </head>
 <body>
+    <h1>CSS UNITS</h1>
     <!-- Absolute Unit -->
     <h2>1. Absolute Unit</h2>
     <p>
@@ -27,8 +28,8 @@
         <p>
             <b>Ví Dụ: box width 100px và height 100px</b>
         </p>
-        <div class="box1"></div>
-        
+        <div class="box1">BOX 1</div>
+        <br>
         <li>pt</li>
         <li>cm</li>
         <li>mm</li>
@@ -57,7 +58,7 @@
         <p>
             <b>Ví Dụ: box2 width 50% và height 100px</b>
         </p>
-        <div class="box2"></div>
+        <div class="box2">BOX 2</div>
         <p>
             Trong trường hợp này, box2 đang nằm trong thẻ <u>ul</u>, <br>
             vì vậy nó sẽ bằng 50% kích thước thẻ ul. <br>
@@ -67,20 +68,70 @@
     </ul>
     
     <!-- rem -->
-    <ul>  
-        <li><b>rem ✅</b> </li>
+    <ul id="rem">  
+        <li><b>rem : root em ✅</b> </li>
+        <p>
+            rem sẽ phụ thộc vào <b>kích thước của thẻ &lt;html&gt;</b> <br>
+            Mặc định, trình duyệt thường set font-size của &lt;html&gt; là <i><b>16px</b></i> (trừ khi bạn override). <br>
+            
+
+        </p>
+        <div class="box3">BOX 3</div>
+        <p>
+            Trong trường hợp này thẻ &lt;html&gt; có font-size mặc định là 16px. <br>
+            Vì vậy với width box 3 = 160px (10 * 16px)
+        </p>
+        <br>
     </ul>
 
-        <!-- em -->
-        <ul>
-            <li><b>em ✅ </b></li>
-        </ul>
-        <ul>
-            <li>vw</li>
-            <li>vh</li>
-            <li>vmin</li>
-            <li>vmax</li>
-            <li>ex</li>
-            <li>ch</li>
-        </ul>
+    <!-- em -->
+    <ul id="em">
+        <li><b>em ✅ </b></li>
+        <p>
+            em sẽ phụ thuộc vào <b>thẻ gần nhất chứa nó và có thuộc tính fontsize</b>. <br>
+            Nếu thẻ gần nhất không có thuộc tính fontsize, <br>
+            sẽ dịch chuyển lên thẻ cấp trước đó chứa nó tiếp theo để tìm.
+        </p>
+        <div class="em" style="font-size: 30px;">
+            <div class="box4">BOX 4</div>
+        </div>
+            <p>
+            Trong trường hợp này box 4 có width = 10em đang nằm trong thẻ div <br>
+            có fontsize = 30px. <br>
+            Vì vậy với width box 4 = 300px (10 * 30px). 
+            <br>
+            <i>
+                ⚠️ Trong trường hợp thẻ gần nhất không chứa fontsize nó sẽ dịch chuyển <br>
+                đến cấp thẻ trước đó chứa nó. <br>
+                ⚠️ em nhân theo cấp → nếu con lại đặt theo em thì nó cộng dồn. <br>
+                <div id="code">
+                    .parent {<br>
+                        <p id="text-indent">font-size: 16px;</p>
+                    }
+                    <br>
+                    .child {
+                        <p id="text-indent">
+                            font-size: 2em; /* 32px */
+                        </p> 
+                    }
+                    <br>
+                    .grandchild {
+                        <p id="text-indent">
+                             font-size: 1.5em; /* 1.5 × 32px = 48px */
+                        </p>
+                    }
+
+                </div>
+
+            </i>
+        </p>
+    </ul>
+    <ul>
+        <li>vw</li>
+        <li>vh</li>
+        <li>vmin</li>
+        <li>vmax</li>
+        <li>ex</li>
+        <li>ch</li>
+    </ul>
 </body>
