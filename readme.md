@@ -9,7 +9,7 @@
   </tr>
   <tr>
     <td style="padding: 5px; border: 1px solid #ccc;">
-      <img src="images/img3.png" alt="Image 3" width="450" height="450" style="display:block; margin:auto;">
+      <img src="images/3.png" alt="Image 3" width="450" height="450" style="display:block; margin:auto;">
     </td>
     <td style="padding: 5px; border: 1px solid #ccc;">
       <img src="images/4.png" alt="Image 4" width="450" height="450" style="display:block; margin:auto;">
