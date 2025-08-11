@@ -1,137 +1,178 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSS Units</title>
-    <link rel="stylesheet" href="./css/3.styles.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./css/3.styles.css" />
+  </head>
+  <body>
     <h1>CSS UNITS</h1>
     <!-- Absolute Unit -->
     <h2>1. Absolute Unit</h2>
     <p>
-            Đặc tính của nhóm Absolute unit: <br>
-            <b><i>Kích thước sẽ cố định, không bị thay đổi</i></b><br>
-            dù cho các yếu tố xung quanh tác động. <br>
-            Ví dụ dù trình duyệt thay đổi kích thước <br> thì kích thước của phần tử sử dụng px vẫn không đổi.
-        </p>
+      Đặc tính của nhóm Absolute unit: <br />
+      <b><i>Kích thước sẽ cố định, không bị thay đổi</i></b
+      ><br />
+      dù cho các yếu tố xung quanh tác động. <br />
+      Ví dụ dù trình duyệt thay đổi kích thước <br />
+      thì kích thước của phần tử sử dụng px vẫn không đổi.
+    </p>
     <!-- px -->
     <ul id="absolute">
-        <li>
-            <b>px ✅ </b>
-        </li>
-        <p>
-            px: 1px thông thường chiếm 1 điểm ảnh (đối với độ phân giải thập). <br>
-            Đối với độ phân giải cao 1px chiếm nhiều điểm ảnh hơn.
-        </p>
-        <p>
-            <b>Ví Dụ: box width 100px và height 100px</b>
-        </p>
-        <div class="box1">BOX 1</div>
-        <br>
-        <li>pt</li>
-        <li>cm</li>
-        <li>mm</li>
-        <li>inch</li>
-        <li>pc</li>
-        <br>
+      <li>
+        <b>px ✅ </b>
+      </li>
+      <p>
+        px: 1px thông thường chiếm 1 điểm ảnh (đối với độ phân giải thập).
+        <br />
+        Đối với độ phân giải cao 1px chiếm nhiều điểm ảnh hơn.
+      </p>
+      <p>
+        <b>Ví Dụ: box width 100px và height 100px</b>
+      </p>
+      <div id="box1">BOX 1</div>
+      <br />
+      <li>pt</li>
+      <li>cm</li>
+      <li>mm</li>
+      <li>inch</li>
+      <li>pc</li>
+      <br />
     </ul>
 
     <!-- Realative Units -->
     <h2>2. Realative Units</h2>
     <p>
-            Đặc tính của nhóm Realative unit: <br>
-            Kích thước <b>không cố định</b>. <br>
-            Kích thước sẽ cần một nơi để phụ thuộc vào.<br>
+      Đặc tính của nhóm Realative unit: <br />
+      Kích thước <b>không cố định</b>. <br />
+      Kích thước sẽ cần một nơi để phụ thuộc vào.<br />
     </p>
 
     <!-- % -->
     <ul id="percent">
-        <li>
-            <b>% ✅</b>
-        </li>
-        <p>
-            Kích thước được tính theo %, <br>
-            <i><b>dựa vào thẻ chứa nó</b></i>
-        </p>
-        <p>
-            <b>Ví Dụ: box2 width 50% và height 100px</b>
-        </p>
-        <div class="box2">BOX 2</div>
-        <p>
-            Trong trường hợp này, box2 đang nằm trong thẻ <u>ul</u>, <br>
-            vì vậy nó sẽ bằng 50% kích thước thẻ ul. <br>
-            Giả dụ thẻ ul có width : 100 px -> box2 có width : 50px. 
-        </p>
-        <br>
+      <li>
+        <b>% ✅</b>
+      </li>
+      <p>
+        Kích thước được tính theo %, <br />
+        <i><b>dựa vào thẻ chứa nó</b></i>
+      </p>
+      <p>
+        <b>Ví Dụ: box2 width 50% và height 100px</b>
+      </p>
+      <div id="box2">BOX 2</div>
+      <p>
+        Trong trường hợp này, box2 đang nằm trong thẻ <u>ul</u>, <br />
+        vì vậy nó sẽ bằng 50% kích thước thẻ ul. <br />
+        Giả dụ thẻ ul có width : 100 px -> box2 có width : 50px.
+      </p>
+      <br />
     </ul>
-    
-    <!-- rem -->
-    <ul id="rem">  
-        <li><b>rem : root em ✅</b> </li>
-        <p>
-            rem sẽ phụ thộc vào <b>kích thước của thẻ &lt;html&gt;</b> <br>
-            Mặc định, trình duyệt thường set font-size của &lt;html&gt; là <i><b>16px</b></i> (trừ khi bạn override). <br>
-            
 
-        </p>
-        <div class="box3">BOX 3</div>
-        <p>
-            Trong trường hợp này thẻ &lt;html&gt; có font-size mặc định là 16px. <br>
-            Vì vậy với width box 3 = 160px (10 * 16px)
-        </p>
-        <br>
+    <!-- rem -->
+    <ul id="rem">
+      <li><b>rem : root em ✅</b></li>
+      <p>
+        rem sẽ phụ thộc vào <b>kích thước của thẻ &lt;html&gt;</b> <br />
+        Mặc định, trình duyệt thường set font-size của &lt;html&gt; là
+        <i><b>16px</b></i> (trừ khi bạn override). <br />
+      </p>
+      <div id="box3">BOX 3</div>
+      <p>
+        Trong trường hợp này thẻ &lt;html&gt; có font-size mặc định là 16px.
+        <br />
+        Vì vậy với width box 3 = 160px (10 * 16px)
+      </p>
+      <br />
     </ul>
 
     <!-- em -->
     <ul id="em">
-        <li><b>em ✅ </b></li>
-        <p>
-            em sẽ phụ thuộc vào <b>thẻ gần nhất chứa nó và có thuộc tính fontsize</b>. <br>
-            Nếu thẻ gần nhất không có thuộc tính fontsize, <br>
-            sẽ dịch chuyển lên thẻ cấp trước đó chứa nó tiếp theo để tìm.
-        </p>
-        <div class="em" style="font-size: 30px;">
-            <div class="box4">BOX 4</div>
-        </div>
-            <p>
-            Trong trường hợp này box 4 có width = 10em đang nằm trong thẻ div <br>
-            có fontsize = 30px. <br>
-            Vì vậy với width box 4 = 300px (10 * 30px). 
-            <br>
-            <i>
-                ⚠️ Trong trường hợp thẻ gần nhất không chứa fontsize nó sẽ dịch chuyển <br>
-                đến cấp thẻ trước đó chứa nó. <br>
-                ⚠️ em nhân theo cấp → nếu phần tử con lại đặt theo "em" thì nó cộng dồn. <br>
-                <div id="code">
-                    .parent {<br>
-                        <p id="text-indent">font-size: 16px;</p>
-                    }
-                    <br>
-                    .child {
-                        <p id="text-indent">
-                            font-size: 2em; /* 16px *2 = 32px */
-                        </p> 
-                    }
-                    <br>
-                    .grandchild {
-                        <p id="text-indent">
-                             font-size: 1.5em; /*32px * 1.5 = 48px */
-                        </p>
-                    }
+      <li><b>em ✅ </b></li>
+      <p>
+        em sẽ phụ thuộc vào
+        <b>thẻ gần nhất chứa nó và có thuộc tính fontsize</b>. <br />
+        Nếu thẻ gần nhất không có thuộc tính fontsize, <br />
+        sẽ dịch chuyển lên thẻ cấp trước đó chứa nó tiếp theo để tìm.
+      </p>
+      <div class="em" style="font-size: 30px">
+        <div id="box4">BOX 4</div>
+      </div>
+      <p>
+        Trong trường hợp này box 4 có width = 10em đang nằm trong thẻ div <br />
+        có fontsize = 30px. <br />
+        Vì vậy với width box 4 = 300px (10 * 30px).
+        <br />
 
-                </div>
+				⚠️ Trong trường hợp thẻ gần nhất không chứa fontsize nó sẽ dịch chuyển
+				<br />
+				đến cấp thẻ trước đó chứa nó. <br />
+				⚠️ em nhân theo cấp → nếu phần tử con lại đặt theo "em" thì nó cộng
+				dồn. <br />
 
-            </i>
-        </p>
+				<!-- code -->
+				<div id="code">
+					.parent {<br />
+					<p id="text-indent">font-size: 16px;</p>
+					}
+					<br />
+					.child {
+					<p id="text-indent">font-size: 2em; /* 16px *2 = 32px */</p>
+					}
+					<br />
+					.grandchild {
+					<p id="text-indent">font-size: 1.5em; /*32px * 1.5 = 48px */</p>
+					}
+				</div>
+				<br>
+      </p>
+    </ul>
+
+    <!-- vw -->
+    <ul id="vw">
+      <li><b>vw : viewport width ✅</b></li>
+      <p>
+        Viewport width chính là chiều rộng( chiều ngang) của trình duyệt. <br />
+        1vw = 1% chiều ngang của trình duyệt. <br />
+        Khác với giá trị %, vì % phụ thuộc vào thẻ chứa nó. <br />
+        Còn vw phụ thuộc vào kích thước trình duyệt. Dù thẻ chứa nó có nhỏ đi,
+        nó cũng không quan tâm.
+        <br />
+      </p>
+      <div id="box5">BOX 5</div>
+      <p>
+        Trong trường hợp này thẻ Box 5 có vh = 50vw = 50% <u>chiều ngang trình duyệt.</u> <br>
+      </p>
+      <br />
+    </ul>
+
+    <!-- vh -->
+    <ul id="vh">
+      <li>vh : viewport height ✅</li>
+			<li><b>vw : viewport width ✅</b></li>
+      <p>
+        Viewport height chính là chiều cao( chiều dọc) của trình duyệt. <br />
+        1vh = 1% chiều dọc của trình duyệt. <br />
+      </p>
+      <div id="box6">BOX 6</div>
+      <p>
+        Trong trường hợp này thẻ Box 6 có vh = 30vh = 30% <u>chiều dọc trình duyệt.</u> <br>
+      </p>
+      <br />
+    </ul>
+
+    <ul>
+      <li>vmin</li>
     </ul>
     <ul>
-        <li>vw</li>
-        <li>vh</li>
-        <li>vmin</li>
-        <li>vmax</li>
-        <li>ex</li>
-        <li>ch</li>
+      <li>vmax</li>
     </ul>
-</body>
+    <ul>
+      <li>ex</li>
+    </ul>
+    <ul>
+      <li>ch</li>
+    </ul>
+  </body>
+</html>
