@@ -3,7 +3,7 @@
     <td><img src="images/1.png" alt="Image 1" width="150" height="150" style="display:block; margin:auto;"></td>
     <td><img src="images/2.png" alt="Image 2" width="150" height="150" style="display:block; margin:auto;"></td>
     <td><img src="images/img3.png" alt="Image 3" width="150" height="150" style="display:block; margin:auto;"></td>
-    <td><img src="images/img4.png" alt="Image 4" width="150" height="150" style="display:block; margin:auto;"></td>
+    <td><img src="images/4.png" alt="Image 4" width="150" height="150" style="display:block; margin:auto;"></td>
   </tr>
   <tr>
     <td><img src="images/img5.png" alt="Image 5" width="150" height="150" style="display:block; margin:auto;"></td>
