@@ -6,7 +6,7 @@
     <td><img src="images/4.png" alt="Image 4" width="150" height="150" style="display:block; margin:auto;"></td>
   </tr>
   <tr>
-    <td><img src="images/img5.png" alt="Image 5" width="150" height="150" style="display:block; margin:auto;"></td>
+    <td><img src="images/5.png" alt="Image 5" width="150" height="150" style="display:block; margin:auto;"></td>
     <td><img src="images/img6.png" alt="Image 6" width="150" height="150" style="display:block; margin:auto;"></td>
     <td><img src="images/img7.png" alt="Image 7" width="150" height="150" style="display:block; margin:auto;"></td>
     <td><img src="images/img8.png" alt="Image 8" width="150" height="150" style="display:block; margin:auto;"></td>
