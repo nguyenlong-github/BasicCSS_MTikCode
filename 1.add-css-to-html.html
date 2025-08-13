@@ -1,34 +1,43 @@
-
-<div class="internal-css">
-    <!-- 1. Internal CSS (CSS nội bộ) -->
-    <style>
-        .internal-css {
-            background-color: rgb(0, 191, 255);
-        }
-        h1#internal-css {
-            color: rgb(255, 255, 255);
-            
-        }
-    </style>
-
-    <h1 id="internal-css">Đây là Internal CSS</h1>
-</div>
-
-    
-
-<!--  2. Inline CSS (CSS trực tiếp trong thẻ HTML) -->
-<h1 style="color: rgb(180, 145, 255); background-color: rgb(0, 0, 0);">Đây là Inline CSS</h1>
-
-<!-- 3. External CSS (CSS ngoài) -->
 <!DOCTYPE html>
-<html>
-<head>
-    <title>External CSS</title>
-    <link rel="stylesheet" href="./css/">
-</head>
-<body >
-    <h1 id="external-css">Đây là External CSS</h1>
-</body>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ví dụ về 3 cách chèn CSS</title>
+    <!--  External CSS (CSS ngoài) -->
+    <link rel="stylesheet" href="./css/1.styles.css" />
+    <!-- File CSS ngoài -->
+  </head>
+  <body>
+    <!--  1️⃣ Inline CSS -->
+    <h1
+      style="color: rgb(180, 145, 255); background-color: black; padding: 10px"
+    >
+      2. Đây là Inline CSS
+    </h1>
+
+    <!--  2️⃣ Internal CSS (CSS nội bộ) -->
+    <style>
+      /* Nội bộ: Định dạng cho div.internal-css */
+      .internal-css {
+        background-color: rgb(0, 191, 255);
+        padding: 10px;
+      }
+      /* Nội bộ: Định dạng cho tiêu đề trong Internal CSS */
+      #internal-css {
+        color: white;
+        margin: 0;
+      }
+    </style>
+    <!-- 2️⃣ Internal CSS : Dùng thẻ <style></style> -->
+    <div class="internal-css">
+      <h1 id="internal-css">1. Đây là Internal CSS</h1>
+    </div>
+
+    <!-- 
+		3️⃣ External CSS :
+		Dùng <link rel="stylesheet" href="./css/1.styles.css" /> 
+		-->
+    <h1 id="external-css">3. Đây là External CSS</h1>
+  </body>
 </html>
-
-

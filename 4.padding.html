@@ -8,42 +8,37 @@
   </head>
   <body>
     <h1>PADDING CSS</h1>
+
     <div class="box box1">Box 1</div>
     <div class="box box2">Box 2</div>
     <div class="box box3">Box 3</div>
 
-    <h2>Padding có nghĩa là lớp đệm.</h2>
-    <!-- VD1 -->
-    <p><b>Ví Dụ 1:</b></p>
-    <p>
-      Thêm 10px cho padding-top Box 1: <br />
-      <b>padding-top: 10px</b>
-    </p>
-    <div class="box box1" style="padding-top: 20px">Box 1</div>
-    <p>
-      Khi đó tổng chiều cao của Box 1 sẽ là: <br />
-      <b>60px</b><small>(chiều cao ban đầu của content)</small> + <b>20px</b>
-      <small>(padding top)</small> =
-      <b>80px</b>
-    </p>
+    <h2>Padding là khoảng đệm giữa nội dung và viền của phần tử.</h2>
 
-    <!-- VD2 -->
-    <p><b>Ví Dụ 2:</b></p>
-    <p>
-      Cách viết tắt 1: <b>padding: 10px 40px</b> <br />
-      <i> theo thứ tự ↑↓ và →← (top bot = 10px) và (right left = 40px) </i>
-    </p>
+    <section>
+      <h3>Ví dụ 1: padding-top</h3>
+      <p>Thêm 20px cho padding-top Box 1:</p>
+      <div class="box box1 padding-top">Box 1</div>
+      <p>
+        Tổng chiều cao: <b>60px</b> (nội dung) + <b>20px</b> (padding top) =
+        <b>80px</b>
+      </p>
+    </section>
 
-    <div class="box box2" style="padding: 10px 40px">Box 2</div>
+    <section>
+      <h3>Ví dụ 2: padding viết tắt (2 giá trị)</h3>
+      <p>
+        <code>padding: 10px 40px</code> → Trên/dưới = 10px, Trái/phải = 40px
+      </p>
+      <div class="box box2 padding-2val">Box 2</div>
+    </section>
 
-    <!-- VD3 -->
-    <p><b>Ví Dụ 3:</b></p>
-    <p>
-      Cách viết tắt 2: <b>padding: 10px 30px 40px 50px</b> <br />
-      <i>theo thứ tự ↑→↓← top - right - bot - left</i>
-    </p>
-
-    <div class="box box3" style="padding: 10px 30px 40px 50px">Box 3</div>
-    <p></p>
+    <section>
+      <h3>Ví dụ 3: padding viết tắt (4 giá trị)</h3>
+      <p>
+        <code>padding: 10px 30px 40px 50px</code> → Trên - Phải - Dưới - Trái
+      </p>
+      <div class="box box3 padding-4val">Box 3</div>
+    </section>
   </body>
 </html>

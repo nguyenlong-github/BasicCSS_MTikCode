@@ -3,74 +3,49 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Border</title>
+    <title>Border CSS</title>
     <link rel="stylesheet" href="./css/5.styles.css" />
   </head>
   <body>
-    <!-- Box -->
-    <h1>BORDER CSS</h1>
+    <h1>Border CSS</h1>
     <div class="box box1">Box 1</div>
     <div class="box box2">Box 2</div>
     <div class="box box3">Box 3</div>
 
-    <h2>Border là lớp viền, vỏ ôm lấy element</h2>
+    <h2>Border là lớp viền bao quanh element</h2>
 
     <!-- Cách 1 -->
-    <h3>Cách 1:</h3>
-    <p class="code">
-      selector { <br />
-      &nbsp;&nbsp;border-width: &lt;Độ dày&gt;; <br />
-      &nbsp;&nbsp;border-style: &lt;Kiểu viền&gt;; <br />
-      &nbsp;&nbsp;border-color: &lt;Màu sắc&gt;; <br />
-      }
-    </p>
-    <!-- VD -->
-    <p><b>Ví Dụ :</b></p>
-    <p>
-      Thêm 10px cho border Box 1: <br />
-      <b>
-        border-width : 10px; <br />
-        border-style: dashed; <br />
-        border-color: red;
-      </b>
-    </p>
-    <div
-      class="box box1"
-      style="border-width: 10px; border-style: dashed; border-color: red"
-    >
-      Box 1
-    </div>
-    <p>
-      Tạo border có độ dày 10px <br />
-      border có dạng nét đứt <br />
-      border có màu đỏ. <br />
-    </p>
+    <section>
+      <h3>Cách 1: Dùng từng thuộc tính</h3>
+      <pre class="code">
+
+				selector {
+					border-width: &lt;độ dày&gt;;
+					border-style: &lt;kiểu viền&gt;;
+					border-color: &lt;màu sắc&gt;;
+				}
+    </pre
+      >
+      <p>Ví dụ: Thêm border 10px, nét đứt, màu đỏ cho Box 1.</p>
+      <div class="box box1 border-dashed-red">Box 1</div>
+    </section>
 
     <!-- Cách 2 -->
-    <h3>Cách 2:</h3>
-    <p class="code">
-      selector { <br />
-      &nbsp;&nbsp;border: &lt;độ dày&gt; &lt;kiểu viền&gt; &lt;màu sắc&gt;;
-      <br />
-      }
-    </p>
-
-    <!-- VD -->
-    <p><b>Ví Dụ:</b></p>
-    <p>
-      Thêm 10px cho border Box 1: <br />
-      <b>
-        border-width : 10px; <br />
-        border-style: solid; <br />
-        border-color: red;
-      </b>
-			<p><small><i>* Lưu ý: Mặc định solid có border = 2px</i></small></p>
-    </p>
-    <div class="box box2" style="border: 10px solid blueviolet">Box 2</div>
-    <p>
-      Tạo border có độ dày 10px <br />
-      border có dạng nét liền <br />
-      border có màu blueviolet. <br />
-    </p>
+    <section>
+      <h3>Cách 2: Viết gộp</h3>
+      <pre class="code">
+				selector {
+					border: &lt;độ dày&gt; &lt;kiểu viền&gt; &lt;màu sắc&gt;;
+				}
+    </pre
+      >
+      <p>Ví dụ: Thêm border 10px, nét liền, màu blueviolet cho Box 2.</p>
+      <div class="box box2 border-solid-violet">Box 2</div>
+      <small
+        ><i
+          >* Lưu ý: Mặc định solid có border = 2px nếu không chỉ định độ dày</i
+        ></small
+      >
+    </section>
   </body>
 </html>

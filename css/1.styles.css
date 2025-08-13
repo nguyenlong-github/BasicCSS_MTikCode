@@ -1,5 +1,6 @@
-
-h1#external-css {
-    color: green;
-    background-color: antiquewhite;
+/* External CSS: Định dạng cho phần tử #external-css */
+#external-css {
+    color: orange;
+    background-color: navy;
+    padding: 10px;
 }
